@@ -31,7 +31,8 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "../../ssd1306/ssd1306.h"
+#include "../../ssd1306/ssd1306_fonts.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -57,6 +58,12 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SSD1306_CS_Pin GPIO_PIN_1
+#define SSD1306_CS_GPIO_Port GPIOA
+#define OLED_DC_Pin GPIO_PIN_2
+#define OLED_DC_GPIO_Port GPIOA
+#define OLED_Res_Pin GPIO_PIN_3
+#define OLED_Res_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
